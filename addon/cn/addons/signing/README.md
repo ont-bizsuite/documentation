@@ -13,3 +13,18 @@
 | 文档            |      |      |
 | 样例            |      |      |
 | 视频            |      |      |
+
+## 逻辑结构
+
+
+
+## 调用流程
+
+![addon-signing-flow-general](../../res/addon-signing-flow-general.png)
+
+## 部署方案
+
+
+
+## 协议
+

@@ -13,3 +13,18 @@
 | 文档            |      |      |
 | 样例            |      |      |
 | 视频            |      |      |
+
+## 逻辑结构
+
+![addon-attestation-component](../../res/addon-attestation-component.png)
+
+## 调用流程
+
+
+
+## 部署方案
+
+
+
+## 协议
+
