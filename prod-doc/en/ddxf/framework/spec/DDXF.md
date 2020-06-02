@@ -26,8 +26,9 @@
 
 ### 基础协议
 
-- OP-500 GREP v2.0
+- [OP-500 GREP v2.0](https://git.ont.io/Research/ONT-PROTOCOL/src/master/OP-500.md)
 - [原型 ddxf-ifc](https://github.com/ont-bizsuite/ddxf-ifc)
+- [原型实现 DDXF-MP](https://git.ont.io/SmartContract/DDXF-MarketPlace/src/auth)
 
 ### 最小化实现
 
@@ -35,49 +36,51 @@
 
 ### 链上
 
-| OEP | 协议名称 | 备注 |
-| -- | -- | -- |
-| | DDXF                                       | |
-| | Marketplace (pay as you go)                | |
-| | Marketplace (仓储代销)                      | |
-| | SplitFee                                   | |
-| | DToken                                     | |
-| | DToken Enhancement (OEP4)                  | |
-| | DToken Enhancement (OEP5)                  | |
-| | DToken Enhancement (OEP8)                  | |
-| | Offline Judge                             | |
-| | Offline Judge Enhancement (仲裁规则)      | |
-| | Auditor                                    | |
-| | Auditor Enhancement (Selective Disclosure) | |
-| | Marketplace Enhancement (Auditor)          | |
-| [OEP-37](https://github.com/xris-hu/DDXF-OEPS/blob/master/OEP-37.mediawiki) | Marketplace Enhancement (OJ)  | |
-| | Data Provenance                            | |
-| | Curation market                            | |
-| | eContract                                  | |
-| | 信用评价和管理协议（声誉标准）             | |
-| | 跨MP信用互认协议                           | |
+| OEP                                                          | 协议名称                                   | 编码状态 | 文档状态                                                     |优先级|
+| ------------------------------------------------------------ | ------------------------------------------ | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|                                                              | DDXF                                       | 完成     | [go](https://github.com/zhiqiangxu/ddxf/blob/master/contract/ddxf.go) |1|
+|                                                              | Marketplace (pay as you go)                | 完成     | [go](https://github.com/zhiqiangxu/ddxf/blob/master/contract/marketplace.go) |1|
+|                                                              | Marketplace (仓储代销)                     | 原型完成 |                                                              |3|
+|                                                              | SplitFee                                   | 开发中   | [go](https://github.com/zhiqiangxu/ddxf/blob/master/contract/split_policy.go) |3|
+|                                                              | DToken                                     | 完成     | [go](https://github.com/zhiqiangxu/ddxf/blob/master/contract/dtoken.go) |1|
+|                                                              | DToken Enhancement (OEP4)                  |          |                                                              |1|
+|                                                              | DToken Enhancement (OEP5)                  |          |                                                              |3|
+|                                                              | DToken Enhancement (OEP8)                  | 原型完成 |                                                              |2|
+| | DToken Enhancement (OEP64) | | |2|
+| | DToken到数据源-令牌映射扩展 | 持续 | |2|
+|                                                              | Offline Judge                             | 原型完成 |                                                              |2|
+|                                                              | Offline Judge Enhancement (仲裁规则)      |          |                                                              |4|
+|                                                              | Auditor                                    | 原型完成 |                                                              |3|
+|                                                              | Auditor Enhancement (Selective Disclosure) |          |                                                              |4|
+|                                                              | Marketplace Enhancement (Auditor)          |          |                                                              |4|
+| [OEP-37](https://github.com/xris-hu/DDXF-OEPS/blob/master/OEP-37.mediawiki) | Marketplace Enhancement (OJ)               | 原型完成 |                                                              |3|
+|                                                              | Data Provenance                            |          |                                                              |6|
+|                                                              | Curation market                            | 设计中   |                                                              |5|
+|                                                              | eContract                                  |          |                                                              |5|
+|                                                              | 信用评价和管理协议（声誉标准）             |          |                                                              |3|
+|                                                              | 跨MP信用互认协议                           |          |                                                              |4|
 
 ### 原生协议及工具
 
-| 名称 | 备注|
-| -- | -- |
-| ONT ID 2.0                                     | |
-| 可验证凭证规范                                   | |
-| 多种标准的凭证可视化方案                           | |
-| 信道加密（ONT ID TLS）                            | |
-| 信源定向加密方案                                  | |
-| 匿名声明                                         | |
-| 隐私管理（物理隔断，多ONT ID主钥派生）               | |
-| Claim传递                                       | |
-| 多Token兑价方案                                  | |
-| TEE资源评估和管理方案（数据算法和运行环境准备规范）    | |
-| 数据自治管理——数据访问                               | |
-| 跨链支付方案                                        | |
-| 数据远程安全存储及安全转移推荐方法 （代理重加密）         | |
-| 数据转换接口标准（interoperable object abstraction） | |
-| 句法对齐标注（syntactic mediation）                 | |
-| 语义对齐标注（semantic mediation）                  | |
-| 基于令牌模板的工作流定义和令牌驱动工作流引擎             | |
+| 名称 | 编码状态 | 文档状态 |优先级|
+| -------- | -------- | -------- | -------- |
+| ONT ID 2.0 | 完成     | [OP-001](https://git.ont.io/Research/ONT-PROTOCOL/src/master/OP-001.md) |1|
+| 可验证凭证规范 | 完成 | [OP-100](https://git.ont.io/Research/ONT-PROTOCOL/src/master/OP-100.md) |1|
+| 多种标准的凭证可视化方案 | 持续 | [OP-110 Open Badges](https://git.ont.io/Research/ONT-PROTOCOL/src/master/OP-110.md) |4|
+| 信道加密（ONT ID TLS） |  |  |3|
+| 信源定向加密方案 | | |3|
+| 匿名声明 | 原型完成 | [OP-102](https://git.ont.io/Research/ONT-PROTOCOL/src/master/eng/OP-102.md) |2|
+| 隐私管理（物理隔断，多ONT ID主钥派生） | 完成 | |2|
+| Claim传递 | 设计中 | |2|
+| 多Token兑价方案 |  | |2|
+| TEE资源评估和管理方案（数据算法和运行环境准备规范） |  | |2|
+| 数据自治管理——数据访问 | 持续 | |2|
+| 跨链支付方案 |  | |4|
+| 数据远程安全存储及安全转移推荐方法 （代理重加密） |  | |3|
+| 数据转换接口标准（interoperable object abstraction） |  | |4|
+| 句法对齐标注（syntactic mediation） |  | |4|
+| 语义对齐标注（semantic mediation） |  | |4|
+| 基于令牌模板的工作流定义和令牌驱动工作流引擎 |  | |3|
 
 ### 链外 Meta Schema
 
@@ -145,7 +148,7 @@
 				"create": false,
 				"update": false,
 				"delete": false
-			}],
+			},
 			<"response_type": "expected response type (singed url, ssh keys, OTP, etc)",>
 			"expires": "date in seconds"
   }]: token acl from service provider

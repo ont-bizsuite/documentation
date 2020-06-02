@@ -1,0 +1,17 @@
+{
+    "token": [
+        {
+            "endpoint": "data://xxx/endpoints",
+            "description": "resource description",
+            "sla": "service level agreement reference",
+            "permissions": {
+                "read": true,
+                "write": false,
+                "create": false,
+                "update": false,
+                "delete": false
+            },
+            "response_type": "expected response type (singed url, ssh keys, OTP, etc)",
+            "expires": "date in seconds"
+        }]
+}

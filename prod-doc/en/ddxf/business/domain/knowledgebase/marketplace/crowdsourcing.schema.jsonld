@@ -1,0 +1,79 @@
+{
+    "@context": {
+        "gr": "http://purl.org/goodrelations/v1#",
+        "pto": "http://www.productontology.org/id/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "foaf:page": {
+            "@type": "@id"
+        },
+        "gr:acceptedPaymentMethods": {
+            "@type": "@id"
+        },
+        "gr:hasBusinessFunction": {
+            "@type": "@id"
+        },
+        "gr:hasCurrencyValue": {
+            "@type": "xsd:float"
+        },
+        "mp": {
+            "@id":"http://ont.io/ddxf#mp",
+            "@type":"@id",
+            "@context": {
+                "owner": {
+                    "@id":"http://ont.io/ddxf#owner",
+                    "@type":"xsd:string"
+                },
+                "marketplace": {
+                    "@id":"http://ont.io/ddxf#marketplace",
+                    "@type":"xsd:string"
+                },
+                "acl": {
+                    "@id":"http://ont.io/ddxf#acl",
+                    "@type":"xsd:anyURI"
+                },
+                "timespan": {
+                    "@id":"http://ont.io/ddxf#timespan",
+                    "@type": "xsd:dateTime"
+                },
+                "judgers": {
+                    "@id":"http://ont.io/ddxf#judgers",
+                    "@type": "xsd:array"
+                },
+                "total": {
+                    "@id":"http://ont.io/ddxf#total",
+                    "@type": "xsd:integer"
+                }
+            }
+        }
+    },
+    "@id": "market://example.org/cars/for-sale/uuid",
+    "@type": "gr:Offering",
+    "gr:name": "Used Tesla Roadster",
+    "gr:description": "Need to sell fast and furiously",
+    "gr:hasBusinessFunction": "gr:Sell",
+    "gr:acceptedPaymentMethods": "gr:Cash",
+    "gr:hasPriceSpecification": {
+        "gr:hasCurrencyValue": "85000",
+        "gr:hasCurrency": "USD"
+    },
+    "gr:includes": {
+        "@type": [
+            "gr:Individual",
+            "pto:Vehicle"
+        ],
+        "gr:name": "Tesla Roadster",
+        "foaf:page": "http://www.teslamotors.com/roadster"
+    },
+    "mp": {
+        "owner": "did:ont:xxx",
+        "marketplace": "did:ont:xxx",
+        "acl": "data://xxx/yyy#acl-0",
+        "dataId": "did:ont:xxx",
+        "expired": "2021-04-09T20:00:00Z",
+        "total": 10000,
+        "judgers": [
+            "did:ont:xxx",
+            "xxx"]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "meta": {
+        "id":"did:ont:xxx",
+        "name":"name",
+        "type":"storage",
+        "created":"20200320T000000",
+        "license":"CC-0",
+        "author":"did:ont:xxx",
+        "owner": [
+            "did:ont:xxx"],
+        "resources": [
+            {
+                "uri":"storage://xxx/xxx",
+                "contentType":"text/xml",
+                "name":"",
+                "contentLength":123,
+                "index": 0,
+                "checksum":"md5:xxx",
+                "encoding":"UTF-8",
+                "compress":"zip",
+                "encrypt":{
+                    "service":"data://xxx/action",
+                    "params":[
+                        {
+                            "paramKey":"val"
+                        }]
+                },
+                "extra": {
+                }
+            },
+            {
+                "version": "0.1.0",
+                "format": "docker",
+                "language": "java",
+                "entrypoint": {
+                    "cmd": "abc $paramKey ...",
+                    "image": "docker-image",
+                    "tag": "tag"
+                }
+            }
+        ]            
+    }
+}

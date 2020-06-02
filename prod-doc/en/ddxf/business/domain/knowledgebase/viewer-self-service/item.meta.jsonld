@@ -1,0 +1,26 @@
+{
+    "marketplace": {
+        "meta":{
+            "name": "displayed resource name",
+            "description": "resource description",
+            "copyright": "copyright",
+            "published": "20200320T000000",
+            "categories": [
+                "Other"],
+            "links": [
+            ],
+            "tags": [
+            ]
+        },
+        "dtoken_schema": [
+            {
+                "dataId": "did:ont:xxx",
+                "endpoint": "data://xxx#serviceName",
+                "acl_desc_hash": "xxx",
+                "token": "data://xxx/data#acl-0",
+                "marketplace": "market://example.org/cars/for-sale/uuid",
+                "expireDate": 201301032312,
+                "amount": 999
+            }]
+    }
+}

@@ -1,0 +1,29 @@
+{
+	//Header
+	{
+		"alg": "HS256", // hashing algorithm
+		"typ": "JWT"   // type of the token
+	},
+	//Payload
+	{
+		"iss": "did:ont:xxx": (Issuer) Claim, ONT ID or ONS,
+		"sub": "name": (Subject) Claim,
+		"iat": 1516239022: (Issued At) Claim,
+		"exp": 1526790800: (Expiration Time) Claim,
+		"nbf": 1516239022: optional, (Not Before) Claim,>
+		"aud": "did:ont:xxx": optional, (Audience) Claim,>
+		"jti": "xxx": optional, (JWT ID) Claim,>
+		"consumer_pubkey": "xxx": consumer Public Key, DToken holder address,
+		"encrypt_pubkey": "xxx": optional, public key for encryption,>
+		"dtoken_hash": "xxx": DToken hash,
+		"resource_id": "market://xxx#id",
+		"service_endpoint": "data://xxx#actionName-indexInResourceArray": optional, use data service to operate on data resource,>
+		"nonce": "<token_hex(32)>",
+	},
+	//Signature
+	HMACSHA256(
+		base64UrlEncode(header) + "." +
+		base64UrlEncode(payload),
+		Resource_owner_secret
+	)
+}

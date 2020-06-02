@@ -1,0 +1,9 @@
+{
+    "dataid": [
+        "did:ont:xxx",
+        "did:ont:yyy"],
+    "metahash":"hash256(meta)",
+    "expires":2020102130,
+    "accessCount":3,
+    "transferCount":3
+}
