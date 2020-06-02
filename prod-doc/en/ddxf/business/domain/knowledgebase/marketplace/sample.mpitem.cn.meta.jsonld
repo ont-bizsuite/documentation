@@ -1,0 +1,54 @@
+{
+ "@context": {
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "gr": "http://purl.org/goodrelations/v1#",
+  "pto": "http://www.productontology.org/id/",
+  "gr:acceptedPaymentMethods": {
+   "@type": "@id"
+  },
+  "gr:hasBusinessFunction": {
+   "@type": "@id"
+  },
+  "gr:hasCurrencyValue": {
+   "@type": "xsd:float"
+  },
+  "题目": "http://schema.org/name",
+  "来源": {
+   "@id": "http://cnki.net/source",
+   "@type": "xsd:string"
+  },
+  "作者": {
+   "@id": "http://schema.org/author",
+   "@type": "xsd:string"
+  },
+  "分类": {
+   "@id": "http://cnki.net/category",
+   "@type": "xsd:string"
+  },
+  "类型": {
+   "@id": "http://cnki.net/type",
+   "@type": "xsd:string"
+  },
+  "机构": {
+   "@id": "http://schema.org/organ",
+   "@type": "xsd:string"
+  }
+ },
+ "gr:hasBusinessFunction": "gr:Sell",
+ "gr:acceptedPaymentMethods": "gr:Cash",
+ "gr:hasPriceSpecification": {
+  "gr:hasCurrencyValue": "85000",
+  "gr:hasCurrency": "USD"
+ },
+ "gr:includes": {
+  "@type": [
+   "gr:Individual"
+  ]
+ },
+ "题目": "PNT体系建模与可信PNT区块链体系研究",
+ "作者": ["陈威屹", "肖桃顺", "孙洪伟", "沈艳丽", "曾凌川"],
+ "来源": "第十一届中国卫星导航年会论文集——S10 PNT体系与多源融合导航",
+ "分类": ["中国会议"],
+ "类型": ["html"],
+ "机构": ["did:ont:中国电子科学研究院", "did:ont:中国科学院空天信息研究院"]
+}
