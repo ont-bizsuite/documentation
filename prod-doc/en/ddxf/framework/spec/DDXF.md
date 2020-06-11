@@ -94,7 +94,7 @@
 
 ##### 2.1 文档数据源
 
-```json
+```
 {
 	meta: {
 		id: "did:ont:xxx": data id of this data instance,
@@ -136,7 +136,7 @@
 
 ##### 2.2 Token描述
 
-```json
+```
 {
    token: [{
 	    "endpoint": "data://xxx/endpoints",
@@ -156,7 +156,7 @@
 ```
 
 ##### 2.3 ONT ID DDO, v2 spec
-```json
+```
 {
   manager: "did:ont:xxx": data owner id,
   endpoint: "data://xxx#dataName": meta data service provider uri,
@@ -167,7 +167,7 @@
 ```
 
 ##### 2.4 商品挂单交互JSON-LD
-```json
+```
 {
 	"@context": {
 		"gr": "http://purl.org/goodrelations/v1#",
@@ -228,7 +228,7 @@
 ```
 
 ##### 2.5 MP商品元数据
-```json
+```
 {
 	marketplace: {
 		meta:{
@@ -255,7 +255,7 @@
 ```
 
 ##### 2.5 JWT 转化
-```json
+```
 {
 	//Header
 	{
