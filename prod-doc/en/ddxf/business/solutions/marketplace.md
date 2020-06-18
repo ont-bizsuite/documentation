@@ -19,7 +19,7 @@ For detail and technology support, please contact Ontology dev team.
 ## 2. Enable marketplace runtime
 
 1. Enable marketplace for end users
-   1. [Resource preparing](../scenarios/resource-preparing.md)
+   1. [Resource preparing](../scenarios/resource-preparation.md)
       1. call [resource-data mapping and upload](../scenarios/data-storage/upload.md) in `data storage provider`
       2. get claim from [resource auditor](./resource-auditor.md)
       3. [generate data identifier](../scenarios/data-storage/generate-id.md) for data in `data storage provider`
