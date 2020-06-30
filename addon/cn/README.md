@@ -111,9 +111,9 @@
 |  | addon runtime运行时统计数据反馈办法 | |
 |  | addon 运行时资费管理办法 | |
 | | addon 运行时版本管理办法 | 向下兼容、平滑升级 |
-| Addon store | addon store 资费和管理协议 | addon 或 addon store 使用，使用DDXF |
+| [Addon store](../en/addon-store/Add-on store usage.md) | addon store 资费和管理协议 | addon 或 addon store 使用，使用DDXF |
 |  | addon store 对app.ont ONS管理办法 | |
-|  | [addon store加载addon方案](./addon-store/Addon Deployment and Update Guide.md) |  |
+|  | [addon store加载addon方案](../en/addon-store/Addon Deployment and Update Guide.md) |  |
 |  | addon store对addon环境注册协议和管理办法 | 注册环境、环境迁移脚本、迁移资费等 |
 |  | addon store对addon配置schema渲染协议 | (load) pre-rendering=>fill-in-form=>render=>post-rendering |
 | | addon store对addon配置交互协议 | 支持构造交易签名、付费、配置步骤依赖等 |

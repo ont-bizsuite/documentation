@@ -1,4 +1,4 @@
-# Add-on Usage Documentation
+# Add-on Usage
 
 ## Overview
 
