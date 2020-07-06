@@ -9,6 +9,6 @@
 
 ## Usecases
 
-- Openbase
+- [Openbase](../domain/knowledgebase)
 - Moviebloc
 - ...
