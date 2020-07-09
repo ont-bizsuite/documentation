@@ -20,7 +20,7 @@
 
 ## 调用流程
 
-![addon-signing-flow-general](../../res/addon-signing-flow-general.png)
+![signing-flow-general](./res/signing-flow-general.png)
 
 ## 部署方案
 

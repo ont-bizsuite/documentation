@@ -16,7 +16,7 @@
 
 ## 逻辑结构
 
-![addon-attestation-component](../../res/addon-attestation-component.png)
+![overview](./res/overview.png)
 
 ## 调用流程
 
