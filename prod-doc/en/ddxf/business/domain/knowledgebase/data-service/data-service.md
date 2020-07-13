@@ -5,6 +5,8 @@ verifyToken(token) boolean
 
 useToken(token) (err, txhash)
 
+/ddxf/seller/useToken
+
 createToken(meta) (token, txhash)
 
 removeToken(token) txhash

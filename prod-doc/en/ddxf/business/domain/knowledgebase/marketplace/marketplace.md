@@ -5,6 +5,8 @@ getSchema() schema
 
 publish(item_meta) mpitem
 
+/ddxf/mp/publishItemMeta
+
 get(mptiem) item_meta
 
 query(...) []mpitem
