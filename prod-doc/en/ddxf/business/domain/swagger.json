@@ -484,6 +484,98 @@
         }
       }
     },
+    "/ddxf/meta/create": {
+      "post": {
+        "description": "create meta",
+        "operationId": "SwaggerCreateMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "CreateMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/CreateMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/meta/delete": {
+      "post": {
+        "description": "delete meta",
+        "operationId": "SwaggerDeleteMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/DeleteMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "DeleteMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/DeleteMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/meta/get": {
+      "post": {
+        "description": "get meta",
+        "operationId": "SwaggerGetMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/GetMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/meta/update": {
+      "post": {
+        "description": "update meta",
+        "operationId": "SwaggerUpdateMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "UpdateMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/UpdateMetaOutput"
+            }
+          }
+        }
+      }
+    },
     "/ddxf/mp/buy": {
       "post": {
         "description": "use token",
@@ -533,13 +625,13 @@
     "/ddxf/mp/publish_item": {
       "post": {
         "description": "publish item",
-        "operationId": "SwaggerItemPublishInput",
+        "operationId": "SwaggerPublishItemInput",
         "parameters": [
           {
             "name": "Input",
             "in": "body",
             "schema": {
-              "$ref": "#/definitions/ItemPublishInput"
+              "$ref": "#/definitions/PublishItemInput"
             }
           }
         ],
@@ -791,17 +883,20 @@
       "type": "object",
       "title": "CreateDataMetaInput ...",
       "properties": {
-        "DataMeta": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "object"
-          }
+        "DataMetaID": {
+          "type": "string"
         },
         "Endpoint": {
           "type": "string"
         },
         "Fingerprint": {
           "type": "string"
+        },
+        "OntIDs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
@@ -846,7 +941,7 @@
             "format": "uint8"
           }
         },
-        "OntIds": {
+        "OntIDs": {
           "type": "array",
           "items": {
             "type": "string"
@@ -1197,9 +1292,25 @@
       },
       "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
     },
-    "ItemPublishInput": {
+    "ItemPublishOutput": {
       "type": "object",
-      "title": "ItemPublishInput ...",
+      "title": "ItemPublishOutput ...",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "PublishItemInput": {
+      "type": "object",
+      "title": "PublishItemInput ...",
       "properties": {
         "AccountantContract": {
           "type": "string"
@@ -1214,11 +1325,8 @@
         "ItemID": {
           "type": "string"
         },
-        "ItemMeta": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "object"
-          }
+        "ItemMetaID": {
+          "type": "string"
         },
         "MetaEndpoint": {
           "type": "string"
@@ -1230,27 +1338,17 @@
           "type": "integer",
           "format": "uint32"
         },
+        "TokenEndpoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "TokenTemplateIDs": {
           "type": "array",
           "items": {
             "type": "string"
           }
-        }
-      },
-      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
-    },
-    "ItemPublishOutput": {
-      "type": "object",
-      "title": "ItemPublishOutput ...",
-      "properties": {
-        "code": {
-          "type": "integer",
-          "format": "int64",
-          "x-go-name": "Code"
-        },
-        "msg": {
-          "type": "string",
-          "x-go-name": "Msg"
         }
       },
       "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
@@ -1508,11 +1606,11 @@
         "DataID": {
           "type": "string"
         },
-        "Meta": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "object"
-          }
+        "Endpoint": {
+          "type": "string"
+        },
+        "TokenMetaID": {
+          "type": "string"
         }
       },
       "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
@@ -1570,11 +1668,8 @@
         "DataID": {
           "type": "string"
         },
-        "DataMeta": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "object"
-          }
+        "DataMetaID": {
+          "type": "string"
         },
         "Fingerprint": {
           "type": "string"
