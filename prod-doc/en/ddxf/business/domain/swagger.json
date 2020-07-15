@@ -3,7 +3,7 @@
   "paths": {
     "/ddxf/data_meta/create": {
       "post": {
-        "description": "create data meta",
+        "description": "create data meta(anything you can express with map[string]interface{})",
         "operationId": "SwaggerCreateDataMetaInput",
         "parameters": [
           {
