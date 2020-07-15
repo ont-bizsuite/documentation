@@ -1,0 +1,1798 @@
+{
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "title": "token api.",
+    "termsOfService": "there are no TOS at this moment, use at your own risk we take no responsibility",
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/ddxf/dtoken/add_agent": {
+      "post": {
+        "description": "add token agent",
+        "operationId": "SwaggerAddTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AddTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AddTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/AddTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/add_template_auth": {
+      "post": {
+        "description": "add token template auth",
+        "operationId": "SwaggerAddTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AddTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AddTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/AddTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/clear_agent": {
+      "post": {
+        "description": "clear token agent",
+        "operationId": "SwaggerClearTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ClearTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/clear_template_auth": {
+      "post": {
+        "description": "clear token template auth",
+        "operationId": "SwaggerClearTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ClearTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/create_template": {
+      "post": {
+        "description": "create token template",
+        "operationId": "SwaggerCreateTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "CreateTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/CreateTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/generate": {
+      "post": {
+        "description": "generate token",
+        "operationId": "SwaggerGenerateTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GenerateTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GenerateTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/GenerateTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/get": {
+      "post": {
+        "description": "get token",
+        "operationId": "SwaggerGetTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/GetTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/get_template": {
+      "post": {
+        "description": "get token template",
+        "operationId": "SwaggerGetTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/GetTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/remove_agent": {
+      "post": {
+        "description": "remove token agent",
+        "operationId": "SwaggerRemoveTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/remove_template": {
+      "post": {
+        "description": "remove token template",
+        "operationId": "SwaggerRemoveTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/remove_template_auth": {
+      "post": {
+        "description": "remove token template auth",
+        "operationId": "SwaggerRemoveTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/set_agent": {
+      "post": {
+        "description": "set token agent",
+        "operationId": "SwaggerSetTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/SetTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "SetTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/SetTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/set_template_auth": {
+      "post": {
+        "description": "set token template auth",
+        "operationId": "SwaggerSetTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/SetTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "SetTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/SetTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/transfer": {
+      "post": {
+        "description": "transfer token",
+        "operationId": "SwaggerTransferTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/TransferTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "TransferTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/TransferTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/update_template": {
+      "post": {
+        "description": "update token template",
+        "operationId": "SwaggerUpdateTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "UpdateTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/UpdateTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/use": {
+      "post": {
+        "description": "use token",
+        "operationId": "SwaggerUseTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UseTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "UseTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/UseTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/verify": {
+      "post": {
+        "description": "verify token",
+        "operationId": "SwaggerVerifyTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/VerifyTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "VerifyTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/VerifyTokenOutput"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AddTokenAgentInput": {
+      "type": "object",
+      "title": "AddTokenAgentInput ...",
+      "properties": {
+        "Agents": {
+          "description": "agents for the token",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "N": {
+          "description": "additional amount for agent, len(N) == len(Agents)",
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenID": {
+          "description": "token id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "AddTokenAgentOutput": {
+      "type": "object",
+      "title": "AddTokenAgentOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "AddTokenTemplateAuthInput": {
+      "type": "object",
+      "title": "AddTokenTemplateAuthInput ...",
+      "properties": {
+        "Auths": {
+          "description": "authenticated accounts",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          }
+        },
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenTemplateID": {
+          "description": "template id, generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "AddTokenTemplateAuthOutput": {
+      "type": "object",
+      "title": "AddTokenTemplateAuthOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "AddrAmt": {
+      "type": "object",
+      "properties": {
+        "HasWithdraw": {
+          "type": "boolean"
+        },
+        "Percent": {
+          "type": "integer",
+          "format": "uint32"
+        },
+        "To": {
+          "$ref": "#/definitions/Address"
+        }
+      },
+      "x-go-package": "github.com/ont-bizsuite/ddxf-sdk/split_policy_contract"
+    },
+    "Address": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "uint8"
+      },
+      "x-go-package": "github.com/ontio/ontology/common"
+    },
+    "BaseResp": {
+      "description": "BaseResp for resp std",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "BuyItemInput": {
+      "type": "object",
+      "title": "BuyItemInput ...",
+      "properties": {
+        "Buyer": {
+          "$ref": "#/definitions/Address"
+        },
+        "ItemID": {
+          "description": "item id",
+          "type": "string"
+        },
+        "N": {
+          "description": "# of items to buy",
+          "type": "integer",
+          "format": "int64"
+        },
+        "Payer": {
+          "$ref": "#/definitions/Address"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "BuyItemOutput": {
+      "type": "object",
+      "title": "BuyItemOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "ClearTokenAgentInput": {
+      "type": "object",
+      "title": "ClearTokenAgentInput ...",
+      "properties": {
+        "Agents": {
+          "description": "agents to clear",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenID": {
+          "description": "token id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "ClearTokenAgentOutput": {
+      "type": "object",
+      "title": "ClearTokenAgentOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "ClearTokenTemplateAuthInput": {
+      "type": "object",
+      "title": "ClearTokenTemplateAuthInput ...",
+      "properties": {
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenTemplateID": {
+          "description": "template id, generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "ClearTokenTemplateAuthOutput": {
+      "type": "object",
+      "title": "ClearTokenTemplateAuthOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "CreateDataMetaInput": {
+      "description": "IDSign",
+      "type": "object",
+      "title": "CreateDataMetaInput ...",
+      "properties": {
+        "DataMetaID": {
+          "description": "data meta id",
+          "type": "string"
+        },
+        "Endpoint": {
+          "description": "endpoint for data meta id",
+          "type": "string"
+        },
+        "Fingerprint": {
+          "description": "data fingerprint",
+          "type": "string"
+        },
+        "OntIDs": {
+          "description": "controller ontids for this data meta",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "CreateDataMetaOutput": {
+      "type": "object",
+      "title": "CreateDataMetaOutput ...",
+      "properties": {
+        "DataID": {
+          "description": "uuid for this data meta",
+          "type": "string"
+        },
+        "Tx": {
+          "description": "send to chain with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "CreateMetaInput": {
+      "type": "object",
+      "title": "CreateMetaInput ...",
+      "properties": {
+        "Meta": {
+          "description": "meta info",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "MetaHash": {
+          "description": "meta hash of meta, generated by github.com/zhiqiangxu/ddxf.HashObject2Hex",
+          "type": "string"
+        },
+        "OntIDs": {
+          "description": "controller ontids for this meta",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "CreateMetaOutput": {
+      "type": "object",
+      "title": "CreateMetaOutput ...",
+      "properties": {
+        "MetaID": {
+          "description": "id for this meta",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "CreateTokenTemplateInput": {
+      "description": "Note: update token_template_id when tx is published",
+      "type": "object",
+      "title": "CreateTokenTemplateInput ...",
+      "properties": {
+        "Address": {
+          "$ref": "#/definitions/Address"
+        },
+        "Template": {
+          "$ref": "#/definitions/TokenTemplate"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "CreateTokenTemplateOutput": {
+      "type": "object",
+      "title": "CreateTokenTemplateOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "DeleteItemInput": {
+      "type": "object",
+      "title": "DeleteItemInput ...",
+      "properties": {
+        "ItemID": {
+          "description": "item id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "DeleteItemOutput": {
+      "type": "object",
+      "title": "DeleteItemOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "DeleteMetaInput": {
+      "type": "object",
+      "title": "DeleteMetaInput ...",
+      "properties": {
+        "MetaID": {
+          "description": "id for this meta",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "DeleteMetaOutput": {
+      "type": "object",
+      "title": "DeleteMetaOutput ...",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "Fee": {
+      "type": "object",
+      "properties": {
+        "ContractAddr": {
+          "$ref": "#/definitions/Address"
+        },
+        "ContractType": {
+          "$ref": "#/definitions/TokenType"
+        },
+        "Count": {
+          "type": "integer",
+          "format": "uint64"
+        }
+      },
+      "x-go-package": "github.com/ont-bizsuite/ddxf-sdk/market_place_contract"
+    },
+    "GenerateTokenInput": {
+      "type": "object",
+      "title": "GenerateTokenInput ...",
+      "properties": {
+        "Auth": {
+          "$ref": "#/definitions/Address"
+        },
+        "N": {
+          "description": "amount of token",
+          "type": "integer",
+          "format": "int64"
+        },
+        "To": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenTemplateID": {
+          "description": "template id, generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GenerateTokenOutput": {
+      "type": "object",
+      "title": "GenerateTokenOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetDataMetaInput": {
+      "type": "object",
+      "title": "GetDataMetaInput ...",
+      "properties": {
+        "DataID": {
+          "description": "uuid for this data meta",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetDataMetaOutput": {
+      "type": "object",
+      "title": "GetDataMetaOutput ...",
+      "properties": {
+        "DataMeta": {
+          "description": "data meta stored at endpoint",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "Fingerprint": {
+          "description": "data fingerprint",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetItemInput": {
+      "type": "object",
+      "title": "GetItemInput ...",
+      "properties": {
+        "ItemID": {
+          "description": "item id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetItemOutput": {
+      "type": "object",
+      "title": "GetItemOutput ...",
+      "properties": {
+        "AccountantContract": {
+          "description": "accountant contract for marketplace",
+          "type": "string"
+        },
+        "ExpiredDate": {
+          "description": "valid until this timestamp, in seconds",
+          "type": "integer",
+          "format": "uint64"
+        },
+        "Fee": {
+          "$ref": "#/definitions/Fee"
+        },
+        "ItemMetaID": {
+          "description": "meta id of item meta",
+          "type": "string"
+        },
+        "MetaEndpoint": {
+          "description": "endpoint for item meta id",
+          "type": "string"
+        },
+        "SplitPolicy": {
+          "$ref": "#/definitions/SplitPolicyRegisterParam"
+        },
+        "Stock": {
+          "description": "stock of item",
+          "type": "integer",
+          "format": "uint32"
+        },
+        "TokenContracts": {
+          "description": "token contract for each token",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "TokenTemplateIDs": {
+          "description": "token template ids is generated by /ddxf/dtoken/create_template",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetMetaInput": {
+      "type": "object",
+      "title": "GetMetaInput ...",
+      "properties": {
+        "MetaHash": {
+          "description": "meta hash of meta",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetMetaOutput": {
+      "type": "object",
+      "title": "GetMetaOutput ...",
+      "properties": {
+        "Meta": {
+          "description": "meta info",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetTokenInput": {
+      "type": "object",
+      "title": "GetTokenInput ...",
+      "properties": {
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenID": {
+          "description": "token id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetTokenOutput": {
+      "type": "object",
+      "title": "GetTokenOutput ...",
+      "properties": {
+        "N": {
+          "description": "# of token owned",
+          "type": "integer",
+          "format": "int64"
+        },
+        "TokenTemplate": {
+          "$ref": "#/definitions/TokenTemplate"
+        },
+        "TokenTemplateID": {
+          "description": "token template id for this token, generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetTokenTemplateInput": {
+      "type": "object",
+      "title": "GetTokenTemplateInput ...",
+      "properties": {
+        "TokenTemplateID": {
+          "description": "template id, generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "GetTokenTemplateOutput": {
+      "type": "object",
+      "title": "GetTokenTemplateOutput ...",
+      "properties": {
+        "Auths": {
+          "description": "authenticated accounts",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          }
+        },
+        "Template": {
+          "$ref": "#/definitions/TokenTemplate"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "PublishItemInput": {
+      "type": "object",
+      "title": "PublishItemInput ...",
+      "properties": {
+        "AccountantContract": {
+          "description": "accountant contract for marketplace",
+          "type": "string"
+        },
+        "ExpiredDate": {
+          "description": "valid until this timestamp, in seconds",
+          "type": "integer",
+          "format": "uint64"
+        },
+        "Fee": {
+          "$ref": "#/definitions/Fee"
+        },
+        "ItemID": {
+          "description": "item id, should be new",
+          "type": "string"
+        },
+        "ItemMetaID": {
+          "description": "meta id of item meta",
+          "type": "string"
+        },
+        "MetaEndpoint": {
+          "description": "endpoint for item meta id",
+          "type": "string"
+        },
+        "SplitPolicy": {
+          "$ref": "#/definitions/SplitPolicyRegisterParam"
+        },
+        "Stock": {
+          "description": "stock of item",
+          "type": "integer",
+          "format": "uint32"
+        },
+        "TokenContracts": {
+          "description": "token contract for each token",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "TokenTemplateIDs": {
+          "description": "token template ids is generated by /ddxf/dtoken/create_template",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "PublishItemOutput": {
+      "type": "object",
+      "title": "PublishItemOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveDataMetaInput": {
+      "type": "object",
+      "title": "RemoveDataMetaInput ...",
+      "properties": {
+        "DataID": {
+          "description": "uuid for this data meta",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveDataMetaOutput": {
+      "type": "object",
+      "title": "RemoveDataMetaOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send to chain with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveTokenAgentInput": {
+      "type": "object",
+      "title": "RemoveTokenAgentInput ...",
+      "properties": {
+        "Agents": {
+          "description": "agents for the token",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "N": {
+          "description": "amount for agent, len(N) == len(Agents)",
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenID": {
+          "description": "token id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveTokenAgentOutput": {
+      "type": "object",
+      "title": "RemoveTokenAgentOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveTokenTemplateAuthInput": {
+      "type": "object",
+      "title": "RemoveTokenTemplateAuthInput ...",
+      "properties": {
+        "Auths": {
+          "description": "authenticated accounts",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          }
+        },
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenTemplateID": {
+          "description": "template id, generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveTokenTemplateAuthOutput": {
+      "type": "object",
+      "title": "RemoveTokenTemplateAuthOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveTokenTemplateInput": {
+      "type": "object",
+      "title": "RemoveTokenTemplateInput ...",
+      "properties": {
+        "Address": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenTemplateID": {
+          "description": "monitored above",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "RemoveTokenTemplateOutput": {
+      "type": "object",
+      "title": "RemoveTokenTemplateOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "SetTokenAgentInput": {
+      "type": "object",
+      "title": "SetTokenAgentInput ...",
+      "properties": {
+        "Agents": {
+          "description": "agents for the token",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "N": {
+          "description": "amount for agent, len(N) == len(Agents)",
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenID": {
+          "description": "token id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "SetTokenAgentOutput": {
+      "type": "object",
+      "title": "SetTokenAgentOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "SetTokenTemplateAuthInput": {
+      "type": "object",
+      "title": "SetTokenTemplateAuthInput ...",
+      "properties": {
+        "Auths": {
+          "description": "authenticated accounts",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          }
+        },
+        "Owner": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenTemplateID": {
+          "description": "template id, generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "SetTokenTemplateAuthOutput": {
+      "type": "object",
+      "title": "SetTokenTemplateAuthOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "SplitPolicyRegisterParam": {
+      "type": "object",
+      "properties": {
+        "AddrAmts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AddrAmt"
+          }
+        },
+        "ContractAddr": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenTy": {
+          "$ref": "#/definitions/TokenType"
+        }
+      },
+      "x-go-package": "github.com/ont-bizsuite/ddxf-sdk/split_policy_contract"
+    },
+    "TokenTemplate": {
+      "type": "object",
+      "title": "TokenTemplate ...",
+      "properties": {
+        "DataID": {
+          "description": "data id is generated by /ddxf/data_meta/create",
+          "type": "string"
+        },
+        "Endpoint": {
+          "description": "endpoint for meta service",
+          "type": "string"
+        },
+        "TokenMetaHash": {
+          "description": "token meta hash for token meta",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "TokenType": {
+      "description": "TokenType def",
+      "type": "integer",
+      "format": "uint8",
+      "x-go-package": "github.com/ont-bizsuite/ddxf-sdk/split_policy_contract"
+    },
+    "TransferTokenInput": {
+      "description": "AddressSign",
+      "type": "object",
+      "title": "TransferTokenInput ...",
+      "properties": {
+        "From": {
+          "$ref": "#/definitions/Address"
+        },
+        "N": {
+          "description": "amount of token",
+          "type": "integer",
+          "format": "int64"
+        },
+        "To": {
+          "$ref": "#/definitions/Address"
+        },
+        "TokenID": {
+          "description": "token id",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "TransferTokenOutput": {
+      "type": "object",
+      "title": "TransferTokenOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateDataMetaInput": {
+      "type": "object",
+      "title": "UpdateDataMetaInput ...",
+      "properties": {
+        "DataID": {
+          "description": "uuid for this data meta",
+          "type": "string"
+        },
+        "DataMetaID": {
+          "description": "data meta id",
+          "type": "string"
+        },
+        "Fingerprint": {
+          "description": "data fingerprint",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateDataMetaOutput": {
+      "type": "object",
+      "title": "UpdateDataMetaOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send to chain with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateItemInput": {
+      "type": "object",
+      "title": "UpdateItemInput ...",
+      "properties": {
+        "AccountantContract": {
+          "description": "accountant contract for marketplace",
+          "type": "string"
+        },
+        "ExpiredDate": {
+          "description": "valid until this timestamp, in seconds",
+          "type": "integer",
+          "format": "uint64"
+        },
+        "Fee": {
+          "$ref": "#/definitions/Fee"
+        },
+        "ItemID": {
+          "description": "item id",
+          "type": "string"
+        },
+        "ItemMetaID": {
+          "description": "meta id of item meta",
+          "type": "string"
+        },
+        "MetaEndpoint": {
+          "description": "endpoint for item meta id",
+          "type": "string"
+        },
+        "SplitPolicy": {
+          "$ref": "#/definitions/SplitPolicyRegisterParam"
+        },
+        "Stock": {
+          "description": "stock of item",
+          "type": "integer",
+          "format": "uint32"
+        },
+        "TokenContracts": {
+          "description": "token contract for each token",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "TokenTemplateIDs": {
+          "description": "token template ids is generated by /ddxf/dtoken/create_template",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateItemOutput": {
+      "type": "object",
+      "title": "UpdateItemOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateMetaInput": {
+      "type": "object",
+      "title": "UpdateMetaInput ...",
+      "properties": {
+        "Meta": {
+          "description": "meta info",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "MetaHash": {
+          "description": "meta hash of meta, generated by github.com/zhiqiangxu/ddxf.HashObject2Hex",
+          "type": "string"
+        },
+        "MetaID": {
+          "description": "id for this meta",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateMetaOutput": {
+      "type": "object",
+      "title": "UpdateMetaOutput ...",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateTokenTemplateInput": {
+      "type": "object",
+      "title": "UpdateTokenTemplateInput ...",
+      "properties": {
+        "Address": {
+          "$ref": "#/definitions/Address"
+        },
+        "Template": {
+          "$ref": "#/definitions/TokenTemplate"
+        },
+        "TokenTemplateID": {
+          "description": "monitored above",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UpdateTokenTemplateOutput": {
+      "type": "object",
+      "title": "UpdateTokenTemplateOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UseTokenInput": {
+      "description": "AddressSign",
+      "type": "object",
+      "title": "UseTokenInput ...",
+      "properties": {
+        "Address": {
+          "$ref": "#/definitions/Address"
+        },
+        "N": {
+          "description": "# of token",
+          "type": "integer",
+          "format": "int64"
+        },
+        "TokenID": {
+          "description": "token id, generated by /ddxf/mp/buy_item or /ddxf/dtoken/generate",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "UseTokenOutput": {
+      "type": "object",
+      "title": "UseTokenOutput ...",
+      "properties": {
+        "Tx": {
+          "description": "send with ontology sdk",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "VerifyTokenInput": {
+      "description": "AddressSign",
+      "type": "object",
+      "title": "VerifyTokenInput ...",
+      "properties": {
+        "Address": {
+          "$ref": "#/definitions/Address"
+        },
+        "N": {
+          "description": "# of token",
+          "type": "integer",
+          "format": "int64"
+        },
+        "TokenID": {
+          "description": "token id, generated by /ddxf/mp/buy_item or /ddxf/dtoken/generate",
+          "type": "string"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    },
+    "VerifyTokenOutput": {
+      "type": "object",
+      "title": "VerifyTokenOutput ...",
+      "properties": {
+        "OK": {
+          "description": "whether the owner has so many tokens",
+          "type": "boolean"
+        },
+        "TokenTemplate": {
+          "$ref": "#/definitions/TokenTemplate"
+        },
+        "TokenTemplateID": {
+          "description": "generated by /ddxf/dtoken/create_template",
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Code"
+        },
+        "msg": {
+          "type": "string",
+          "x-go-name": "Msg"
+        }
+      },
+      "x-go-package": "github.com/zhiqiangxu/ddxf-api/pkg/io"
+    }
+  }
+}
