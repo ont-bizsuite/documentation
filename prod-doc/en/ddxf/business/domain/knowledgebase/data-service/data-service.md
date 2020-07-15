@@ -3,15 +3,27 @@
 ```
 verifyToken(token) boolean
 
+/ddxf/dtoken/verify
+
 useToken(token) (err, txhash)
+
+/ddxf/dtoken/use
 
 createToken(meta) (token, txhash)
 
-removeToken(token) txhash
+/ddxf/dtoken/create
 
-updateToken(token, meta) txhash
+removeTokenTemplate(token) txhash
+
+/ddxf/dtoken/remove_template
+
+updateTokenTemplate(token, meta) txhash
+
+/ddxf/dtoken/update_template
 
 get(token) meta
+
+/ddxf/dtoken/get
 ```
 
 ## data service access
