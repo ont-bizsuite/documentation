@@ -11,6 +11,489 @@
     "version": "0.0.1"
   },
   "paths": {
+    "/ddxf/data_meta/create": {
+      "post": {
+        "description": "create data meta",
+        "operationId": "SwaggerCreateDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "CreateDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/CreateDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/data_meta/delete": {
+      "post": {
+        "description": "remove data meta",
+        "operationId": "SwaggerRemoveDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/data_meta/get": {
+      "post": {
+        "description": "get data meta",
+        "operationId": "SwaggerGetDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/GetDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/data_meta/update": {
+      "post": {
+        "description": "update data meta",
+        "operationId": "SwaggerUpdateDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "UpdateDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/UpdateDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/add_agent": {
+      "post": {
+        "description": "add token agent",
+        "operationId": "SwaggerAddTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AddTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AddTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/AddTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/add_template_auth": {
+      "post": {
+        "description": "add token template auth",
+        "operationId": "SwaggerAddTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AddTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AddTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/AddTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/clear_agent": {
+      "post": {
+        "description": "clear token agent",
+        "operationId": "SwaggerClearTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ClearTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/clear_template_auth": {
+      "post": {
+        "description": "clear token template auth",
+        "operationId": "SwaggerClearTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ClearTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/ClearTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/create_template": {
+      "post": {
+        "description": "create token template",
+        "operationId": "SwaggerCreateTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "CreateTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/CreateTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/generate": {
+      "post": {
+        "description": "generate token",
+        "operationId": "SwaggerGenerateTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GenerateTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GenerateTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/GenerateTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/get": {
+      "post": {
+        "description": "get token",
+        "operationId": "SwaggerGetTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/GetTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/get_template": {
+      "post": {
+        "description": "get token template",
+        "operationId": "SwaggerGetTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/GetTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/remove_agent": {
+      "post": {
+        "description": "remove token agent",
+        "operationId": "SwaggerRemoveTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/remove_template": {
+      "post": {
+        "description": "remove token template",
+        "operationId": "SwaggerRemoveTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/remove_template_auth": {
+      "post": {
+        "description": "remove token template auth",
+        "operationId": "SwaggerRemoveTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/set_agent": {
+      "post": {
+        "description": "set token agent",
+        "operationId": "SwaggerSetTokenAgentInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/SetTokenAgentInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "SetTokenAgentOutput",
+            "schema": {
+              "$ref": "#/definitions/SetTokenAgentOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/set_template_auth": {
+      "post": {
+        "description": "set token template auth",
+        "operationId": "SwaggerSetTokenTemplateAuthInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/SetTokenTemplateAuthInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "SetTokenTemplateAuthOutput",
+            "schema": {
+              "$ref": "#/definitions/SetTokenTemplateAuthOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/transfer": {
+      "post": {
+        "description": "transfer token",
+        "operationId": "SwaggerTransferTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/TransferTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "TransferTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/TransferTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/update_template": {
+      "post": {
+        "description": "update token template",
+        "operationId": "SwaggerUpdateTokenTemplateInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateTokenTemplateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "UpdateTokenTemplateOutput",
+            "schema": {
+              "$ref": "#/definitions/UpdateTokenTemplateOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/use": {
+      "post": {
+        "description": "use token",
+        "operationId": "SwaggerUseTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UseTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "UseTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/UseTokenOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/dtoken/verify": {
+      "post": {
+        "description": "verify token",
+        "operationId": "SwaggerVerifyTokenInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/VerifyTokenInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "VerifyTokenOutput",
+            "schema": {
+              "$ref": "#/definitions/VerifyTokenOutput"
+            }
+          }
+        }
+      }
+    },
     "/ddxf/mp/buy": {
       "post": {
         "description": "use token",
@@ -127,7 +610,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "N": {
@@ -299,7 +782,7 @@
           "description": "agents to clear",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "Owner": {
@@ -371,12 +854,12 @@
       "type": "object",
       "title": "CreateDataMetaInput ...",
       "properties": {
-        "DataMetaID": {
+        "DataMetaHash": {
           "description": "data meta id",
           "type": "string"
         },
         "Endpoint": {
-          "description": "endpoint for data meta id",
+          "description": "endpoint for data meta hash",
           "type": "string"
         },
         "Fingerprint": {
@@ -677,12 +1160,12 @@
         "Fee": {
           "$ref": "#/definitions/Fee"
         },
-        "ItemMetaID": {
+        "ItemMetaHash": {
           "description": "meta id of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
         },
         "SplitPolicy": {
@@ -852,13 +1335,19 @@
           "description": "item id, should be new",
           "type": "string"
         },
-        "ItemMetaID": {
-          "description": "meta id of item meta",
+        "ItemMetaHash": {
+          "description": "meta hash of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
+        },
+        "Seller": {
+          "$ref": "#/definitions/Address"
+        },
+        "SplitContract": {
+          "$ref": "#/definitions/Address"
         },
         "SplitPolicy": {
           "$ref": "#/definitions/SplitPolicyRegisterParam"
@@ -866,13 +1355,13 @@
         "Stock": {
           "description": "stock of item",
           "type": "integer",
-          "format": "uint32"
+          "format": "uint64"
         },
         "TokenContracts": {
           "description": "token contract for each token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "TokenTemplateIDs": {
@@ -944,15 +1433,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
-          }
-        },
-        "N": {
-          "description": "amount for agent, len(N) == len(Agents)",
-          "type": "array",
-          "items": {
-            "type": "integer",
-            "format": "int64"
+            "$ref": "#/definitions/Address"
           }
         },
         "Owner": {
@@ -1030,9 +1511,6 @@
       "type": "object",
       "title": "RemoveTokenTemplateInput ...",
       "properties": {
-        "Address": {
-          "$ref": "#/definitions/Address"
-        },
         "TokenTemplateID": {
           "description": "monitored above",
           "type": "string"
@@ -1068,7 +1546,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "N": {
@@ -1244,8 +1722,12 @@
           "description": "uuid for this data meta",
           "type": "string"
         },
-        "DataMetaID": {
-          "description": "data meta id",
+        "DataMetaHash": {
+          "description": "data meta hash",
+          "type": "string"
+        },
+        "Endpoint": {
+          "description": "endpoint for data meta hash",
           "type": "string"
         },
         "Fingerprint": {
@@ -1295,13 +1777,19 @@
           "description": "item id",
           "type": "string"
         },
-        "ItemMetaID": {
-          "description": "meta id of item meta",
+        "ItemMetaHash": {
+          "description": "meta hash of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
+        },
+        "Seller": {
+          "$ref": "#/definitions/Address"
+        },
+        "SplitContract": {
+          "$ref": "#/definitions/Address"
         },
         "SplitPolicy": {
           "$ref": "#/definitions/SplitPolicyRegisterParam"
@@ -1309,13 +1797,13 @@
         "Stock": {
           "description": "stock of item",
           "type": "integer",
-          "format": "uint32"
+          "format": "uint64"
         },
         "TokenContracts": {
           "description": "token contract for each token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "TokenTemplateIDs": {
@@ -1390,9 +1878,6 @@
       "type": "object",
       "title": "UpdateTokenTemplateInput ...",
       "properties": {
-        "Address": {
-          "$ref": "#/definitions/Address"
-        },
         "Template": {
           "$ref": "#/definitions/TokenTemplate"
         },

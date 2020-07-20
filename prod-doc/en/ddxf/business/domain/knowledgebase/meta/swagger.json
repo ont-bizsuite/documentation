@@ -113,7 +113,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "N": {
@@ -285,7 +285,7 @@
           "description": "agents to clear",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "Owner": {
@@ -357,12 +357,12 @@
       "type": "object",
       "title": "CreateDataMetaInput ...",
       "properties": {
-        "DataMetaID": {
+        "DataMetaHash": {
           "description": "data meta id",
           "type": "string"
         },
         "Endpoint": {
-          "description": "endpoint for data meta id",
+          "description": "endpoint for data meta hash",
           "type": "string"
         },
         "Fingerprint": {
@@ -663,12 +663,12 @@
         "Fee": {
           "$ref": "#/definitions/Fee"
         },
-        "ItemMetaID": {
+        "ItemMetaHash": {
           "description": "meta id of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
         },
         "SplitPolicy": {
@@ -838,13 +838,19 @@
           "description": "item id, should be new",
           "type": "string"
         },
-        "ItemMetaID": {
-          "description": "meta id of item meta",
+        "ItemMetaHash": {
+          "description": "meta hash of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
+        },
+        "Seller": {
+          "$ref": "#/definitions/Address"
+        },
+        "SplitContract": {
+          "$ref": "#/definitions/Address"
         },
         "SplitPolicy": {
           "$ref": "#/definitions/SplitPolicyRegisterParam"
@@ -852,13 +858,13 @@
         "Stock": {
           "description": "stock of item",
           "type": "integer",
-          "format": "uint32"
+          "format": "uint64"
         },
         "TokenContracts": {
           "description": "token contract for each token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "TokenTemplateIDs": {
@@ -930,15 +936,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
-          }
-        },
-        "N": {
-          "description": "amount for agent, len(N) == len(Agents)",
-          "type": "array",
-          "items": {
-            "type": "integer",
-            "format": "int64"
+            "$ref": "#/definitions/Address"
           }
         },
         "Owner": {
@@ -1016,9 +1014,6 @@
       "type": "object",
       "title": "RemoveTokenTemplateInput ...",
       "properties": {
-        "Address": {
-          "$ref": "#/definitions/Address"
-        },
         "TokenTemplateID": {
           "description": "monitored above",
           "type": "string"
@@ -1054,7 +1049,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "N": {
@@ -1230,8 +1225,12 @@
           "description": "uuid for this data meta",
           "type": "string"
         },
-        "DataMetaID": {
-          "description": "data meta id",
+        "DataMetaHash": {
+          "description": "data meta hash",
+          "type": "string"
+        },
+        "Endpoint": {
+          "description": "endpoint for data meta hash",
           "type": "string"
         },
         "Fingerprint": {
@@ -1281,13 +1280,19 @@
           "description": "item id",
           "type": "string"
         },
-        "ItemMetaID": {
-          "description": "meta id of item meta",
+        "ItemMetaHash": {
+          "description": "meta hash of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
+        },
+        "Seller": {
+          "$ref": "#/definitions/Address"
+        },
+        "SplitContract": {
+          "$ref": "#/definitions/Address"
         },
         "SplitPolicy": {
           "$ref": "#/definitions/SplitPolicyRegisterParam"
@@ -1295,13 +1300,13 @@
         "Stock": {
           "description": "stock of item",
           "type": "integer",
-          "format": "uint32"
+          "format": "uint64"
         },
         "TokenContracts": {
           "description": "token contract for each token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "TokenTemplateIDs": {
@@ -1376,9 +1381,6 @@
       "type": "object",
       "title": "UpdateTokenTemplateInput ...",
       "properties": {
-        "Address": {
-          "$ref": "#/definitions/Address"
-        },
         "Template": {
           "$ref": "#/definitions/TokenTemplate"
         },
