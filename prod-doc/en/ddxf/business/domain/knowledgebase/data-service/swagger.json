@@ -11,6 +11,98 @@
     "version": "0.0.1"
   },
   "paths": {
+    "/ddxf/data_meta/create": {
+      "post": {
+        "description": "create data meta",
+        "operationId": "SwaggerCreateDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "CreateDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/CreateDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/data_meta/delete": {
+      "post": {
+        "description": "remove data meta",
+        "operationId": "SwaggerRemoveDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/RemoveDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RemoveDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/RemoveDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/data_meta/get": {
+      "post": {
+        "description": "get data meta",
+        "operationId": "SwaggerGetDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/GetDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/data_meta/update": {
+      "post": {
+        "description": "update data meta",
+        "operationId": "SwaggerUpdateDataMetaInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateDataMetaInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "UpdateDataMetaOutput",
+            "schema": {
+              "$ref": "#/definitions/UpdateDataMetaOutput"
+            }
+          }
+        }
+      }
+    },
     "/ddxf/dtoken/add_agent": {
       "post": {
         "description": "add token agent",
@@ -401,6 +493,112 @@
           }
         }
       }
+    },
+    "/ddxf/mp/buy": {
+      "post": {
+        "description": "use token",
+        "operationId": "SwaggerBuyItemInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/BuyItemInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BuyItemOutput",
+            "schema": {
+              "$ref": "#/definitions/BuyItemOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/mp/delete_item": {
+      "post": {
+        "description": "delete item",
+        "operationId": "SwaggerDeleteItemInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/DeleteItemInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "DeleteItemOutput",
+            "schema": {
+              "$ref": "#/definitions/DeleteItemOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/mp/get_item": {
+      "post": {
+        "description": "get item",
+        "operationId": "SwaggerGetItemInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/GetItemInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GetItemOutput",
+            "schema": {
+              "$ref": "#/definitions/GetItemOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/mp/publish_item": {
+      "post": {
+        "description": "publish item",
+        "operationId": "SwaggerPublishItemInput",
+        "parameters": [
+          {
+            "name": "Input",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/PublishItemInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "PublishItemOutput",
+            "schema": {
+              "$ref": "#/definitions/PublishItemOutput"
+            }
+          }
+        }
+      }
+    },
+    "/ddxf/mp/update_item": {
+      "post": {
+        "description": "update item",
+        "operationId": "SwaggerUpdateItemOutput",
+        "responses": {
+          "200": {
+            "description": "UpdateItemOutput",
+            "schema": {
+              "$ref": "#/definitions/UpdateItemOutput"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -412,7 +610,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "N": {
@@ -584,7 +782,7 @@
           "description": "agents to clear",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "Owner": {
@@ -656,12 +854,12 @@
       "type": "object",
       "title": "CreateDataMetaInput ...",
       "properties": {
-        "DataMetaID": {
+        "DataMetaHash": {
           "description": "data meta id",
           "type": "string"
         },
         "Endpoint": {
-          "description": "endpoint for data meta id",
+          "description": "endpoint for data meta hash",
           "type": "string"
         },
         "Fingerprint": {
@@ -962,12 +1160,12 @@
         "Fee": {
           "$ref": "#/definitions/Fee"
         },
-        "ItemMetaID": {
+        "ItemMetaHash": {
           "description": "meta id of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
         },
         "SplitPolicy": {
@@ -1137,13 +1335,19 @@
           "description": "item id, should be new",
           "type": "string"
         },
-        "ItemMetaID": {
-          "description": "meta id of item meta",
+        "ItemMetaHash": {
+          "description": "meta hash of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
+        },
+        "Seller": {
+          "$ref": "#/definitions/Address"
+        },
+        "SplitContract": {
+          "$ref": "#/definitions/Address"
         },
         "SplitPolicy": {
           "$ref": "#/definitions/SplitPolicyRegisterParam"
@@ -1151,13 +1355,13 @@
         "Stock": {
           "description": "stock of item",
           "type": "integer",
-          "format": "uint32"
+          "format": "uint64"
         },
         "TokenContracts": {
           "description": "token contract for each token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "TokenTemplateIDs": {
@@ -1229,15 +1433,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
-          }
-        },
-        "N": {
-          "description": "amount for agent, len(N) == len(Agents)",
-          "type": "array",
-          "items": {
-            "type": "integer",
-            "format": "int64"
+            "$ref": "#/definitions/Address"
           }
         },
         "Owner": {
@@ -1315,9 +1511,6 @@
       "type": "object",
       "title": "RemoveTokenTemplateInput ...",
       "properties": {
-        "Address": {
-          "$ref": "#/definitions/Address"
-        },
         "TokenTemplateID": {
           "description": "monitored above",
           "type": "string"
@@ -1353,7 +1546,7 @@
           "description": "agents for the token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "N": {
@@ -1529,8 +1722,12 @@
           "description": "uuid for this data meta",
           "type": "string"
         },
-        "DataMetaID": {
-          "description": "data meta id",
+        "DataMetaHash": {
+          "description": "data meta hash",
+          "type": "string"
+        },
+        "Endpoint": {
+          "description": "endpoint for data meta hash",
           "type": "string"
         },
         "Fingerprint": {
@@ -1580,13 +1777,19 @@
           "description": "item id",
           "type": "string"
         },
-        "ItemMetaID": {
-          "description": "meta id of item meta",
+        "ItemMetaHash": {
+          "description": "meta hash of item meta",
           "type": "string"
         },
         "MetaEndpoint": {
-          "description": "endpoint for item meta id",
+          "description": "endpoint for item meta hash",
           "type": "string"
+        },
+        "Seller": {
+          "$ref": "#/definitions/Address"
+        },
+        "SplitContract": {
+          "$ref": "#/definitions/Address"
         },
         "SplitPolicy": {
           "$ref": "#/definitions/SplitPolicyRegisterParam"
@@ -1594,13 +1797,13 @@
         "Stock": {
           "description": "stock of item",
           "type": "integer",
-          "format": "uint32"
+          "format": "uint64"
         },
         "TokenContracts": {
           "description": "token contract for each token",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Address"
           }
         },
         "TokenTemplateIDs": {
@@ -1675,9 +1878,6 @@
       "type": "object",
       "title": "UpdateTokenTemplateInput ...",
       "properties": {
-        "Address": {
-          "$ref": "#/definitions/Address"
-        },
         "Template": {
           "$ref": "#/definitions/TokenTemplate"
         },
