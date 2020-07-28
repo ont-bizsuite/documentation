@@ -166,5 +166,5 @@
 
 | 名称                                                         | 备注 |
 | ------------------------------------------------------------ | ---- |
-| [QnA for Ontology Business Suite](./misc/QnA for Ontology Business Suite.md) |      |
+| [QnA for Ontology Business Suite](./misc/QnA_for_Ontology_Business_Suite.md) |      |
 
