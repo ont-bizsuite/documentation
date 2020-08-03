@@ -98,12 +98,12 @@
 | 角色 | 名称        |  描述 |
 | ----------- | ----- | ------ |
 | Addon-index | [CI/CD架构、工作流程和标准协议](./addon/addon-index.md#cicd架构) |        |
-|  | addon configuration meta schema | |
+|  | [addon configuration meta schema](./addon/addon-index.md##addon-configuration-meta-schema) | |
 |  | docker接口协议 | 含addon store配置和渲染描述协议 |
-|  | PR审批和addon store部署流程 | |
+|  | [PR审批和addon store部署流程](./addon/addon-index.md#pr审批和addon-store部署流程) | |
 | | addon runtime交互协议（Client端） | |
 | | addon runtime交互实现校验方法（Client端） | |
-| | addon版本管理办法 | |
+| | [addon版本管理办法](./addon/addon-index.md#addon版本管理办法) | |
 | | addon运行环境切换脚本规范 | |
 | | addon租户资费管理办法 | |
 | Addon | addon runtime运行时业务探针管理办法 | |
