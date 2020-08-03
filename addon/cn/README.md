@@ -97,7 +97,7 @@
 
 | 角色 | 名称        |  描述 |
 | ----------- | ----- | ------ |
-| Addon-index | CI/CD架构、工作流程和标准协议 |        |
+| Addon-index | [CI/CD架构、工作流程和标准协议](./addon/addon-index.md#cicd架构) |        |
 |  | addon configuration meta schema | |
 |  | docker接口协议 | 含addon store配置和渲染描述协议 |
 |  | PR审批和addon store部署流程 | |
