@@ -126,8 +126,8 @@
 |  | addon store数据统计办法 |  |
 
 ## 4. 开发标准
-
-
+### AddonConfig开发标准
+我们有一个精简的golang版本AddonConfig demo，提供了转账以及ONS注册功能，repo在[这里]([https://github.com/ont-bizsuite/addonstep](https://github.com/ont-bizsuite/addonstep))，具体请参考repo的说明。
 
 ## 5. 已有addon
 
