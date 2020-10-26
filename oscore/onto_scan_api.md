@@ -17,6 +17,7 @@ method：POST
   "dataProviderId": 0
 }
 ```
+
 | Field_Name    | Type    | Description |
 |:--------------|:--------|:------------|
 | apiId         | int     | 算法Api id  |
@@ -60,6 +61,7 @@ method：GET
 ```
 
 - 请求：
+
 | Field_Name    | Type    | Description |
 |:--------------|:--------|:------------|
 | id            | String  | 二维码id    |
